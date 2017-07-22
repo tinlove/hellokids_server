@@ -17,6 +17,7 @@ import {TestController} from './test/TestController';
 import {TestModel} from './test/TestModel';
 import {TestService} from './test/TestService';
 
+
 /**
  * @brief HelloKids Application Server
  */
@@ -42,6 +43,8 @@ export class Server {
         this.app.listen(this.PORT, () => {
             this.printStartingLogs();
         });
+
+        require("fs").writeFileSync("processPidLog.log", process.pid);
     }
 
     /**
