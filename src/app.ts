@@ -21,7 +21,7 @@ import {TestService} from './test/TestService';
  * @brief HelloKids Application Server
  */
 export class Server {
-    private PORT: number = 3000;
+    private PORT: number = 3003;
     private app: express.Application;
     private server: InversifyExpressServer;
     private container: Container;
