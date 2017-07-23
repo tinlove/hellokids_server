@@ -43,8 +43,6 @@ export class Server {
         this.app.listen(this.PORT, () => {
             this.printStartingLogs();
         });
-
-        require("fs").writeFileSync("processPidLog.log", process.pid);
     }
 
     /**
