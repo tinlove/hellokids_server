@@ -21,10 +21,10 @@ export class TestController {
     public testGet(req: Request, res: Response, next: NextFunction) {
         var queryParam = req.query;
 
-        console.log("Get-test");
+        console.log("Get");
         console.log("queryParam:", queryParam);
 
-        res.send("Get");
+        res.send("Get-Test 1234");
     }
 
     @Post('/test')
