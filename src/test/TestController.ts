@@ -24,7 +24,7 @@ export class TestController {
         console.log("Get");
         console.log("queryParam:", queryParam);
 
-        res.send("Get");
+        res.send("Get1234");
     }
 
     @Post('/test')
